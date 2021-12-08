@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="Demo For FKEditor_UIDesign"
+run/main_scene="res://MainScene.tscn"
+boot_splash/image="res://addons/FKEditor_UIDesign/Assets/logo.png"
+boot_splash/fullsize=false
+boot_splash/bg_color=Color( 0.266667, 0.443137, 0.858824, 1 )
+config/icon="res://addons/FKEditor_UIDesign/Assets/logo.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/FKEditor_UIDesign/plugin.cfg" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

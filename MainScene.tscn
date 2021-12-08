@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://addons/FKEditor_UIDesign/Assets/Themes/SourceHanSerifSC_Regular.tres" type="Theme" id=1]
+[ext_resource path="res://addons/FKEditor_UIDesign/Assets/Fonts/SourceHanSerifCN/SourceHanSerifCN-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://addons/FKEditor_UIDesign/Assets/Fonts/SourceHanSerifCN/SourceHanSerifCN-Regular.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.0132751, 0.0148988, 0.117188, 1 )
+
+[sub_resource type="DynamicFont" id=10]
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=11]
+use_filter = true
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.296875, 0.0568237, 0.0568237, 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 49.0
+margin_top = 31.0
+margin_right = 256.0
+margin_bottom = 129.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.886719, 0.796743, 0.765488, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/normal = SubResource( 6 )
+text = "测试"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 69.0
+margin_top = 183.0
+margin_right = 440.0
+margin_bottom = 330.0
+theme = ExtResource( 1 )
+custom_fonts/bold_font = SubResource( 10 )
+custom_fonts/normal_font = SubResource( 11 )
+custom_styles/normal = SubResource( 9 )
+text = "ceshi特殊字符
+@《》：『』【】
+<>;$%&()"
+__meta__ = {
+"_edit_use_anchors_": false
+}
